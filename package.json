@@ -1,14 +1,14 @@
 {
   "name": "notes",
   "version": "1.0.0",
-  "description": "Notes taken while learning and experimenting with technologies",
+  "description": "Notes taken while learning and experimenting with technologies.",
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shikshan/notes.git"
+    "url": "https://github.com/shikshan/notes.git"
   },
   "keywords": [],
   "author": "Omkar Patil <ospatil@gmail.com> (https://github.com/ospatil)",
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/shikshan/notes#readme",
   "devDependencies": {
-    "markdown-it-katex": "^2.0.3",
-    "vuepress": "^1.2.0"
+    "@iktakahiro/markdown-it-katex": "^4.0.0",
+    "vuepress": "^1.5.4"
   }
 }
