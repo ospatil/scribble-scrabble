@@ -8,15 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shikshan/notes.git"
+    "url": "https://github.com/ospatil/tech-doodles.git"
   },
   "keywords": [],
   "author": "Omkar Patil <ospatil@gmail.com> (https://github.com/ospatil)",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/shikshan/notes/issues"
-  },
-  "homepage": "https://github.com/shikshan/notes#readme",
+  "homepage": "https://github.com/ospatil/tech-doodles#readme",
   "devDependencies": {
     "@iktakahiro/markdown-it-katex": "^4.0.0",
     "vuepress": "^1.6.0"
