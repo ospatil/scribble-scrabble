@@ -1,6 +1,6 @@
-# Notes
+# Tech-Doodles
 
-Notes taken while learning and experimenting with technologies
+Doodling about technology.
 
 ## Usage
 
