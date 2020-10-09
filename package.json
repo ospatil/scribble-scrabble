@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Doodling about technology",
   "scripts": {
+    "start": "npm run docs:dev",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },

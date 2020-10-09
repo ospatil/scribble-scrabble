@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Notes',
-  description: 'Notes taken while tinkering with technologies and studying.',
+  title: 'Tech Doodles',
+  description: 'Doodling about technology',
   markdown: {
     // options for markdown-it-anchor
     // anchor: { permalink: false },
