@@ -10,5 +10,10 @@ module.exports = {
       // use more markdown-it plugins!
       md.use(require('@iktakahiro/markdown-it-katex'));
     }
+  },
+  themeConfig: {
+    nav: [
+      { text: 'About', link: '/about' },
+    ]
   }
 };

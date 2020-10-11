@@ -4,7 +4,7 @@
   "description": "Doodling about technology",
   "scripts": {
     "start": "npm run docs:dev",
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs --open",
     "docs:build": "vuepress build docs"
   },
   "repository": {
