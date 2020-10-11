@@ -11,7 +11,7 @@ Quick notes on creating a two-node Kubernetes cluster on Azure.
 * Create a new subnet with name `AzureBastionSubnet` for bastion with CIDR `10.100.0.128/27 (10.100.0.128 - 10.100.0.159)`. The name has to be exactly as mentioned since that's what Azure Bastion requires.
 * Create a *Network Security Group* and associate it with `default` subnet. The out-of-the-box inbound and outbound rules are good enough.
 * Create a *Bastion*. Use `AzureBastionSubnet` as a subnet. Select option to create new IP address. The VMs won't be exposed to internet and we'll connect to them only through bastion.
-* Create two virtual machines - one for kubernetes master node and other for a worker node.
+* Create two virtual machines - one for Kubernetes master node and other for a worker node.
   * Use latest *Ubuntu Server LTS* image.
   * *B2ms* size with 2 vCPUs, 8 GiB RAM and about 30 GiB disks is a good choice.
   * Use `SSH public key` authentication with `azureuser` as username and use the SSH key created earlier as `Use existing key stored in Azure` option value.
@@ -87,3 +87,5 @@ Quick notes on creating a two-node Kubernetes cluster on Azure.
   Taints:             <none>
   Taints:             <none>
   ```
+
+* To stop the cluster, stop the worker node first followed by master node and other way round while starting up.
