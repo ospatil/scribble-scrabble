@@ -1,4 +1,10 @@
+---
+tags: ["misc", "vuepress", "diagram"]
+---
+
 # UML Diagrams in Vuepress using nomnoml
+
+<TagLinks />
 
 > **TL;DR** Install my *markdown-it* plugin `npm i -D @ospatil/markdown-it-nomnoml`, configure it as mentioned in [documentation](https://vuepress.vuejs.org/guide/markdown.html#advanced-configuration) and use *```nomnoml* code blocks.
 

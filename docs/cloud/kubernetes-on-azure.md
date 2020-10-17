@@ -1,4 +1,10 @@
+---
+tags: ["kubernetes", "azure"]
+---
+
 # Creating a two node Kubernetes cluster on Azure using Kubeadm
+
+<TagLinks />
 
 Quick notes on creating a two-node Kubernetes cluster on Azure.
 
