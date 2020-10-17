@@ -1,7 +1,8 @@
 module.exports = {
   title: 'Tech Doodles',
-  description: 'Doodling about technology',
+  description: 'Thoughts, observations, notes, experiments etc.',
   markdown: {
+    lineNumbers: true,
     // options for markdown-it-anchor
     // anchor: { permalink: false },
     // options for markdown-it-toc
@@ -14,7 +15,12 @@ module.exports = {
   },
   themeConfig: {
     nav: [
+      { text: 'Tags', link: '/tags' },
       { text: 'About', link: '/about' },
     ]
-  }
+  },
+  plugins: [
+    '@vuepress/last-updated',
+    '@vuepress/back-to-top'
+  ]
 };

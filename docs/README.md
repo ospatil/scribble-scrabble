@@ -1,3 +1,8 @@
+---
+home: true
+footer: Copyright © 2020-present Omkar Patil
+---
+
 ## Experiments
 
 * [Linux tools that docker uses under the hood](experiments/linux-tools-docker)
