@@ -9,6 +9,7 @@ module.exports = {
     extendMarkdown: md => {
       // use more markdown-it plugins!
       md.use(require('@iktakahiro/markdown-it-katex'));
+      md.use(require('@ospatil/markdown-it-nomnoml'));
     }
   },
   themeConfig: {
