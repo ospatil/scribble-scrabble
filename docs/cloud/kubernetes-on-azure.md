@@ -1,8 +1,8 @@
-### Creating a two node Kubernetes cluster on Azure using Kubeadm
+# Creating a two node Kubernetes cluster on Azure using Kubeadm
 
 Quick notes on creating a two-node Kubernetes cluster on Azure.
 
-#### Creating VMs in Azure
+## Creating VMs in Azure
 
 * Use same *resource group* for all the operations below.
 * Create a SSH key with `azureuser` as username. Download the generated `pem` file and keep it at known location, e.g. `~/.ssh/azureuser.pem`. Change the permissions - `chmod 400 azureuser.pem`. This file will be needed to login into VMs through bastion (using *SSH Private Key from Local File* option).
@@ -19,7 +19,7 @@ Quick notes on creating a two-node Kubernetes cluster on Azure.
   * Use the *virtual network* and `default` subnet created earlier in the networking options. Set *Public IP* to `None`. Select `None` for *NIC network security group*.
 * Start the VMs and connect to them using *SSH Private Key from Local File* option and `pem` file created earlier.
 
-#### Setting up Kubernetes cluster
+## Setting up Kubernetes cluster
 
 * Run the following commands on both VMs:
 
