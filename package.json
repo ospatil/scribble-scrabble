@@ -17,6 +17,9 @@
   "homepage": "https://github.com/ospatil/tech-doodles#readme",
   "devDependencies": {
     "@iktakahiro/markdown-it-katex": "^4.0.0",
-    "vuepress": "^1.6.0"
+    "mermaid": "^8.8.2",
+    "vuepress": "^1.6.0",
+    "nomnoml": "^1.2.0",
+    "dagre": "^0.8.5"
   }
 }
