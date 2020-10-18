@@ -20,7 +20,6 @@ module.exports = {
     ]
   },
   plugins: [
-    '@vuepress/last-updated',
     '@vuepress/back-to-top'
   ]
 };

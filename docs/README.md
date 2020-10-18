@@ -11,6 +11,7 @@ footer: Copyright © 2020-present Omkar Patil
 ## Cloud, docker, kubernetes
 
 * [Creating two node Kubernetes cluster on Azure using Kubeadm](cloud/kubernetes-on-azure)
+* [Kafka cluster with web UI for local development](cloud/kafka-docker.md)
 
 ## Miscellaneous
 
