@@ -1,9 +1,7 @@
 ---
+title: Implementing a linux system call
+layout: layouts/post.njk
 tags: ["linux"]
 ---
-
-# Implementing a linux system call
-
-<TagLinks />
 
 Details: <https://github.com/shikshan/syscall>

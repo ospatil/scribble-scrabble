@@ -1,13 +1,13 @@
-# Tech-Doodles
+# Scribble Scrabble
 
-Doodling about technology.
+> Thoughts, observations, notes, experiments etc.
 
 ## Usage
 
 ```bash
 npm i
-npm run docs:dev
+npm start
 
 # to generate static site
-npm run docs:build
+npm run build
 ```

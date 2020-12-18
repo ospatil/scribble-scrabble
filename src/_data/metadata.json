@@ -1,0 +1,19 @@
+{
+  "title": "scribble-scrabble:~#",
+  "url": "https://scribble-scrabble.netlify.app",
+  "description": "Thoughts, observations, notes, experiments etc.",
+  "feed": {
+    "subtitle": "Thoughts, observations, notes, experiments etc.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://scribble-scrabble.netlify.app"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json"
+  },
+  "author": {
+    "name": "Omkar Patil",
+    "email": "omkar.patil@gmail.com",
+    "url": "https://github.com/ospatil"
+  }
+}

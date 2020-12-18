@@ -1,27 +1,39 @@
 {
-  "name": "tech-doodles",
+  "name": "scribble-scrabble",
   "version": "1.0.0",
-  "description": "Doodling about technology",
+  "description": "Thoughts, observations, notes, experiments etc.",
   "scripts": {
-    "start": "npm run docs:dev",
-    "docs:dev": "vuepress dev docs --open --debug",
-    "docs:build": "vuepress build docs"
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "start": "eleventy --serve",
+    "debug": "DEBUG=* eleventy"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ospatil/tech-doodles.git"
+    "url": "https://github.com/ospatil/scribble-scrabble.git"
   },
   "keywords": [],
   "author": "Omkar Patil <ospatil@gmail.com> (https://github.com/ospatil)",
   "license": "MIT",
-  "homepage": "https://github.com/ospatil/tech-doodles#readme",
+  "homepage": "https://scribble-scrabble.netlify.app",
   "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy-navigation": "^0.1.6",
+    "@11ty/eleventy-plugin-rss": "^1.0.9",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "@iktakahiro/markdown-it-katex": "^4.0.0",
     "@ospatil/markdown-it-nomnoml": "^1.0.0",
-    "@vuepress/plugin-back-to-top": "^1.7.1",
     "dagre": "^0.8.5",
+    "luxon": "^1.21.3",
+    "markdown-it": "^8.4.2",
+    "markdown-it-anchor": "^5.2.5",
     "mermaid": "^8.8.2",
     "nomnoml": "^1.2.0",
-    "vuepress": "^1.6.0"
-  }
+    "terminal.css": "^0.7.2"
+  },
+  "prettier": {
+    "singleQuote": true
+  },
+  "dependencies": {}
 }

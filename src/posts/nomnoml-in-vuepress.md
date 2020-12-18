@@ -1,16 +1,14 @@
 ---
-tags: ["misc", "vuepress", "diagram"]
+title: UML Diagrams in markdown using nomnoml
+layout: layouts/post.njk
+tags: ['misc', 'diagram']
 ---
 
-# UML Diagrams in Vuepress using nomnoml
-
-<TagLinks />
-
-> **TL;DR** Install my *markdown-it* plugin `npm i -D @ospatil/markdown-it-nomnoml`, configure it as mentioned in [documentation](https://vuepress.vuejs.org/guide/markdown.html#advanced-configuration) and use *```nomnoml* code blocks.
+> **TL;DR** Install my _markdown-it_ plugin `npm i -D @ospatil/markdown-it-nomnoml`, configure it as mentioned in [documentation](https://vuepress.vuejs.org/guide/markdown.html#advanced-configuration) and use _```nomnoml_ code blocks.
 
 ## Final Result
 
-I searched and couldn't find any *markdown-it* plugin for *nomnoml* so created the one metioned above.
+I searched and couldn't find any _markdown-it_ plugin for _nomnoml_ so created the one metioned above.
 
 ```nomnoml
 [Pirate|eyeCount: Int|raid();pillage()|
@@ -37,11 +35,16 @@ I searched and couldn't find any *markdown-it* plugin for *nomnoml* so created t
 [<actor>Sailor] - [<usecase>shiver me;timbers]
 ```
 
+&nbsp;&nbsp;
+
 ## Worthy Mention: Using Vue Component
 
+<div class="terminal-alert terminal-alert-error">Now the blog is no longer on Vuepress, the following won't work anymore.</div>
+
+<del>
 It can also be done through custom vue component. Install required packages - `dagre` and `nomnoml` and create a custom component with following code:
 
-```js
+````js
 // File - docs/.vuepress/components/Nomnoml.vue
 
 <template>
@@ -63,19 +66,19 @@ export default {
   }
 };
 </script>
-```
+````
 
 Then, use the `<Nomnoml>` components in markdown:
 
-  ```html
-    <Nomnoml>
-    ```
-    [<actor>Sailor] - [<usecase>shiver me;timbers]
-    ```
-    </Nomnoml>
+````html
+  <Nomnoml>
   ```
+  [<actor>Sailor] - [<usecase>shiver me;timbers]
+  ```
+  </Nomnoml>
+````
 
-> Since *nomnoml* syntax uses angular brackets, it was necessary to enclose it in backticks to let *markdown-it* process it as code block and then jumping through hoops to get hold of the *nomnoml* syntax text in the component code.
+> Since _nomnoml_ syntax uses angular brackets, it was necessary to enclose it in backticks to let _markdown-it_ process it as code block and then jumping through hoops to get hold of the _nomnoml_ syntax text in the component code.
 
 Below is the result of rendering it through the custom component.
 
@@ -84,3 +87,5 @@ Below is the result of rendering it through the custom component.
 [<actor>Sailor] - [<usecase>shiver me;timbers]
 ```
 </Nomnoml>
+
+</del>

@@ -1,8 +1,8 @@
 ---
+title: Kafka Cluster With Web UI For Local Development
+layout: layouts/post.njk
 tags: ["kafka", "docker"]
 ---
-
-# Kafka Cluster With Web UI For Local Development
 
 Docker compose yaml file for two kafka brokers, zookeeper and [kafdrop ui](https://github.com/obsidiandynamics/kafdrop).
 
@@ -69,4 +69,5 @@ services:
     depends_on:
       - "kafka1"
       - "kafka2"
+
 ```

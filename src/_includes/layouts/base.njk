@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title or metadata.title }}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
+  <link rel="stylesheet" href="{{ '/css/terminal.min.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+  <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+</head>
+
+<body class="terminal container">
+  <header>
+    <div class="terminal-nav">
+      <div class="terminal-logo">
+        <div class="logo terminal-prompt">
+          <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+          {{ page.url | url }}
+        </div>
+      </div>
+      <nav class="terminal-menu">
+        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+      </nav>
+    </div>
+  </header>
+
+  <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
+    <blockquote>{{ metadata.description }}</blockquote>
+    {{ content | safe }}
+    </main>
+    <footer>Copyright 2020 © {{ metadata.author.name }} // Made with <a href="https://www.11ty.dev/">Eleventy</a> and <a href="https://terminalcss.xyz/">TerminalCSS</a>.</footer>
+
+    <!-- Current page: {{ page.url | url }} -->
+</body>
+
+</html>
