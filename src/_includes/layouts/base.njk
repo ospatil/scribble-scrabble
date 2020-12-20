@@ -9,21 +9,40 @@
   <link rel="stylesheet" href="{{ '/css/terminal.min.css' | url }}">
   <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
   <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  <link rel="stylesheet" href="{{ '/js/svelte.bundle.css' | url }}">
+  <script defer src="{{ '/js/svelte.bundle.js' | url }}"></script>
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js"></script>
+  <script type="text/javascript">
+    algoliasearchNetlify({
+      appId: '5IF5V3EZ6Y',
+      apiKey: 'd47ab09aeca8fa3053de4a73df6dcb82',
+      siteId: '8c8ddc0e-25c5-42a3-9f42-5260b07ba02f',
+      branch: 'master',
+      selector: 'div#search',
+    });
+  </script>
 </head>
 
-<body class="terminal container">
+<body class="terminal container container-fluid">
   <header>
     <div class="terminal-nav">
       <div class="terminal-logo">
         <div class="logo terminal-prompt">
           <a href="{{ '/' | url }}">{{ metadata.title }}</a>
-          {{ page.url | url }}
+          <span class="secondary-color">{{ page.url | url }}</span>
         </div>
       </div>
       <nav class="terminal-menu">
-        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+        {% set navPages = collections.all | eleventyNavigation %}
+        <ul>
+          <li><div id="search"></div></li>
+          {%- for entry in navPages %}
+          <li><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+          {%- endfor %}
+        </ul>
       </nav>
     </div>
   </header>

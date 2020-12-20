@@ -49,10 +49,6 @@ footer {
   content: none;
 }
 
-.logo {
-  font-weight: normal;
-}
-
 .post-tag {
   color: var(--secondary-color);
   border: 1px solid var(--primary-color);
@@ -61,10 +57,22 @@ footer {
   margin: 5px;
 }
 
+.secondary-color {
+  color: var(--secondary-color);
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+
 pre {
   max-width: 100vh;
 }
 
 .post-content {
   margin-top: 20px;
+}
+#search input {
+  padding-left: 1.7rem;
+  border-color: lightgray;
+  color: var(--secondary-color);
+  font-size: 0.9rem;
 }
