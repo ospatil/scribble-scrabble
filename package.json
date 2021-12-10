@@ -28,7 +28,7 @@
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
-    "mermaid": "^8.8.2",
+    "mermaid": "^8.11.0",
     "nomnoml": "^1.2.0",
     "terminal.css": "^0.7.2"
   },
