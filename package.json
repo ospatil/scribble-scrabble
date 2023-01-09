@@ -25,7 +25,7 @@
     "@iktakahiro/markdown-it-katex": "^4.0.0",
     "@ospatil/markdown-it-nomnoml": "^1.0.0",
     "dagre": "^0.8.5",
-    "luxon": "^1.21.3",
+    "luxon": "^2.5.2",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
     "mermaid": "^8.8.2",
